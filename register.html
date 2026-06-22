@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self' https://videos.pexels.com; connect-src 'self' https://script.google.com https://script.googleusercontent.com; base-uri 'self'; form-action 'self'; object-src 'none'; upgrade-insecure-requests">
+  <title>Player Registration | Sphere Football Academy</title>
+  <meta name="description" content="Complete Sphere Football Academy player registration after your trial or academy invitation. Submit player details, calculate the right age group automatically, and get session updates sent straight to your inbox.">
+  <link rel="canonical" href="https://spherefootballacademy.com/register.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sphere Football Academy">
+  <meta property="og:title" content="Player Registration | Sphere Football Academy">
+  <meta property="og:description" content="Complete Sphere Football Academy player registration after your trial or academy invitation.">
+  <meta property="og:url" content="https://spherefootballacademy.com/register.html">
+  <meta property="og:image" content="https://spherefootballacademy.com/images/team.jpg">
+  <meta property="og:locale" content="en_AU">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Player Registration | Sphere Football Academy">
+  <meta name="twitter:description" content="Complete Sphere Football Academy player registration after your trial or academy invitation.">
+  <meta name="twitter:image" content="https://spherefootballacademy.com/images/team.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Sphere Football Academy Player Registration",
+    "url": "https://spherefootballacademy.com/register.html",
+    "description": "Complete player registration with Sphere Football Academy after a trial or academy invitation.",
+    "isPartOf": {
+      "@id": "https://spherefootballacademy.com/#org"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Sphere Football Academy" class="nav-logo-img">
+        <span class="nav-logo-text">SPHERE FOOTBALL <br class="nav-logo-break">ACADEMY</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#coaches">Coaches</a></li>
+        <li><a href="index.html#services">Programs</a></li>
+        <li><a href="birthday.html">Parties</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="index.html#contact" class="nav-cta">Enquire</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="register-page">
+    <section class="page-hero register-shell">
+      <div class="page-hero-bg" style="background-image: url('images/team.jpg');"></div>
+      <div class="page-hero-overlay"></div>
+      <div class="container">
+        <div class="register-layout">
+          <div class="register-sidebar">
+            <div class="register-sidebar-card reveal">
+              <span class="register-kicker">Player Registration</span>
+              <h1 class="register-title">Complete registration after your trial or invitation.</h1>
+              <p class="register-lead">This form is for current players and families who have already spoken with us, completed a trial, or received a registration code. New to Sphere? Start with an enquiry first.</p>
+              <ul class="register-points">
+                <li><span class="register-point-icon">✓</span><span>Age group is calculated automatically from your child’s date of birth.</span></li>
+                <li><span class="register-point-icon">✓</span><span>Your registration code confirms we have already matched you to the right next step.</span></li>
+              </ul>
+            </div>
+
+            <div class="register-sidebar-card register-callout reveal">
+              <strong>Need to enquire first?</strong>
+              <p>New players should <a href="index.html#contact">send an enquiry</a> before registering. We’ll talk through the program, organise a trial if it fits, then send your registration code.</p>
+            </div>
+          </div>
+
+          <div class="register-shell reveal">
+            <section class="register-form-card" id="registration-form-card">
+              <div class="register-form-head">
+                <h2>Sphere Football Academy - Player Registration</h2>
+                <p>Use this form once we have confirmed your place or invited you to complete registration. It helps us contact you with session times, schedules, and important updates.</p>
+              </div>
+
+              <div class="register-status" id="registration-status" role="status" aria-live="polite"></div>
+
+              <form class="form" id="registration-form" novalidate>
+                <input type="hidden" id="mailing-group" name="mailingGroup">
+
+                <!-- Honeypot: invisible to real users, bots fill it out -->
+                <div class="form-hp" aria-hidden="true" tabindex="-1">
+                  <label for="website-url">Website</label>
+                  <input type="text" id="website-url" name="websiteUrl" autocomplete="off" tabindex="-1">
+                </div>
+
+                <div class="register-form-grid">
+                  <div class="form-group">
+                    <label for="parent-first-name">Parent's First Name</label>
+                    <input type="text" id="parent-first-name" name="parentFirstName" required autocomplete="given-name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="parent-surname">Parent's Surname (Last Name)</label>
+                    <input type="text" id="parent-surname" name="parentSurname" required autocomplete="family-name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="parent-email">Parent's Email Address</label>
+                    <input type="email" id="parent-email" name="parentEmail" required autocomplete="email" inputmode="email" placeholder="parent@example.com">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="parent-phone">Parent's Phone Number</label>
+                    <div class="input-prefixed">
+                      <span class="input-prefix">+61</span>
+                      <input type="tel" id="parent-phone" name="parentPhone" autocomplete="tel" inputmode="tel" placeholder="400 000 000">
+                    </div>
+                  </div>
+
+                  <div class="form-group form-group-full">
+                    <label for="child-full-name">Child's Full Name</label>
+                    <input type="text" id="child-full-name" name="childFullName" required autocomplete="name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="child-dob">Child's Date of Birth</label>
+                    <input type="text" id="child-dob" name="childDateOfBirth" required autocomplete="bday" inputmode="numeric" placeholder="DD/MM/YYYY">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="age-group">Age Group</label>
+                    <input type="text" id="age-group" name="ageGroup" class="register-readonly" required readonly placeholder="Calculated automatically">
+                    <p class="register-age-note" id="age-group-note">Enter a date of birth to calculate the age group.</p>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Program <span class="form-label-hint">(select all that apply)</span></label>
+                    <div class="multi-select" id="program-interest-group">
+                      <button type="button" class="multi-select-trigger" id="program-trigger" aria-expanded="false">
+                        <span class="multi-select-value">Select programs</span>
+                      </button>
+                      <div class="multi-select-dropdown" id="program-dropdown">
+                        <label class="multi-select-option"><input type="checkbox" name="programInterest" value="Full-Time Program"><span>Full-Time Program</span></label>
+                        <label class="multi-select-option"><input type="checkbox" name="programInterest" value="Part-Time Program"><span>Part-Time Program</span></label>
+                        <label class="multi-select-option"><input type="checkbox" name="programInterest" value="Futsal Program"><span>Futsal Program</span></label>
+                        <label class="multi-select-option"><input type="checkbox" name="programInterest" value="Mini Program"><span>Mini Program</span></label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="registration-code">Registration Code</label>
+                    <input type="text" id="registration-code" name="registrationCode" required autocomplete="off" placeholder="Enter the code provided by the academy">
+                    <p class="form-helper" id="registration-code-note">You'll receive this code after your trial or when the academy invites you to register.</p>
+                  </div>
+
+                  <div class="form-group form-group-full">
+                    <label for="medical-notes">Medical Notes / Allergies</label>
+                    <textarea id="medical-notes" name="medicalNotes" rows="3" placeholder="Optional, but helpful if there's anything coaches should know."></textarea>
+                  </div>
+
+                  <div class="form-group form-group-full register-consent">
+                    <input type="checkbox" id="guardian-consent" name="guardianConsent" required>
+                    <label for="guardian-consent">I confirm I am the parent or guardian and give permission for my child to participate in Sphere Football Academy sessions.</label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" id="registration-submit">Submit Registration</button>
+              </form>
+            </section>
+
+            <section class="register-confirmation" id="registration-confirmation" aria-live="polite">
+              <h2>Registration received.</h2>
+              <p>Thank you! Your registration has been received. We will contact you shortly with next steps and training schedules.</p>
+              <a href="index.html" class="btn btn-primary">Back to homepage</a>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">SPHERE FOOTBALL ACADEMY</span>
+        </div>
+        <div class="footer-links">
+          <a href="https://www.instagram.com/sphere.football/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@SphereFootball" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="mailto:spherefootball2@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sphere Football Academy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="register.js"></script>
+</body>
+</html>
